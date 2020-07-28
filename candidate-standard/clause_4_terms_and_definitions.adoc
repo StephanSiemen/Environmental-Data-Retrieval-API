@@ -9,11 +9,11 @@ For the purposes of this document, the following additional terms and definition
 
 === area
 
-region specified with an geographic envelope that may have vertical dimension
+region specified with an geographic envelope that may have a vertical dimension or a temporal extent
 
 === corridor
 
-path of a moving point described by a one-parameter window around a set of points
+region around a trajectcory
 
 === location
 
@@ -29,7 +29,7 @@ version, release, or run of a given data collection
 
 === position
 
-a place specified with a geographic point
+a place specified with a geographic point and may have vertical or temporal extent
 
 === radius
 
