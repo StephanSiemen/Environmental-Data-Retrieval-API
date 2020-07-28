@@ -8,18 +8,6 @@ EDR API query patterns, such as Position, Area, Cube, Trajectory or Corridor, ca
 
 The OGC has extended their suite of standards to include Resource Oriented Architectures and Web Application Programming Interfaces (APIs). These standards are based on a shared foundation, the OGC API-Common standard, which defines the resources and access paths that are supported by all OGC APIs. These are listed in <<common-paths>>. This document extends that foundation to define the Environmental Data Retrieval API. 
 
-[#common-paths,reftext='{table-caption} {counter:table-num}']
-.Overview of Resources
-[width="90%",cols="2,2,^1,4",options="header"]
-|====
-| Resource | Path | HTTP Method | Document Reference
-| Landing page | ``/`` | GET | https://github.com/opengeospatial/Environmental-Data-Retrieval-API/blob/master/candidate-standard/clause_0_front_material.adoc#landing-page[API Landing Page]
-| API definition | ``/api`` | GET | https://github.com/opengeospatial/Environmental-Data-Retrieval-API/blob/master/candidate-standard/clause_0_front_material.adoc#api-definition[API Definition]
-| Conformance classes | ``/conformance`` | GET | https://github.com/opengeospatial/Environmental-Data-Retrieval-API/blob/master/candidate-standard/clause_0_front_material.adoc#conformance-classes[Declaration of Conformance Classes]
-| Collections metadata | ``/collections`` | GET | https://github.com/opengeospatial/Environmental-Data-Retrieval-API/blob/master/candidate-standard/clause_0_front_material.adoc#collections-metadata[Collections Metadata]
-| Collection instance metadata | ``/collections/{collection_id}`` | GET | https://github.com/opengeospatial/Environmental-Data-Retrieval-API/blob/master/candidate-standard/clause_0_front_material.adoc#Collecttion-metadata[Collection Metadata]
-|====
-
 The resources identified in  <<common-paths>> primarily support Discovery operations. Discovery operations allow clients to interrogate the API to determine its capabilities and obtain information (metadata) about a distribution of a resource. This includes the API definition of the server(s) as well as metadata about the resources provided by those servers.
 
 This standard extends the common query operations of all OGC APIs by defining simple, coordinate-based, queries which should be applicable to many geospatial resource types. Other OGC API standards may define additional query capabilities specific to their resource type. EDR Query operations allow resources or values to be retrieved from the underlying geospatial resource data store. The information returned is based upon the selection criteria (query string) provided by the client. 
